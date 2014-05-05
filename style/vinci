@@ -1,8 +1,11 @@
+@font_face {
+  src:url(../font/vinci.ttf);
+}
 body {
     margin: 0px;
     padding: 0px;
     font-size: 1.6;
-    font-family: tahoma, arial, sans-serif;
+    font-family: 'vinci', tahoma, arial, sans-serif;
     background:url(../images/1741.png);
 }
 ul {
