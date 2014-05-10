@@ -2,7 +2,7 @@
 <html>
   <head>
   <title> Sébastien Le Querec</title>
-    <LINK rel="stylesheet" type="text/css" href="style/ligth.css"></LINK>
+    <LINK rel="stylesheet" type="text/css" href="style/light.css"></LINK>
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <meta http-equiv="content-language" content="fr">
     <script type="text/javascript">
@@ -23,7 +23,7 @@
     <div id ="all">
         <div id="header">
         <div id="logo">
-            <IMG src="images/logo-etna.png">
+            <IMG src="logo-etna.png" alt= "Photo Sébastien Le Querec">
         </div>
         <div id="title">
             <h1>
@@ -38,7 +38,8 @@
                         <ul>
 
                         <li><a href="index.html"> Acceuil</a></li>
-                        <li><a href="cv.html"> CV Sébastien Le Querec </a></li>
+                        <li><a href="contact.html"> Contact </a></li>
+
                         <li><a href="asso.html"> Association Conetic</a></li>
                         <li><a href="https://github.com/sebidouille/SiteWeb.git"> My gitHub</a></li>
                         </ul>
@@ -53,18 +54,32 @@
                 </ul>
             </div>
             <div id ="main">
-            <h2 id ="Title2">Contact</h2>
-              <form action="mailto:sebastien@lequerec.fr" method="post" name="Contact">
-              <input type="text" name="nom">
-              <input type="text" name="prénom">
-              <textarea name="message" rows="5" cols="20"></textarea>
-              <select name="attribu">
-                <option value="celibataire">celibataire</option>
-                <option value="marié">marié</option>
-                <option value="je m'en caliss">tabarnak</option>
-              </select>
-              <input type="submit"  value="envoyer"></form>
-
+            <h2 id ="Title2">Sebastien Le Querec</h2>
+            <h3> Ingénieur Système, Réseau et Sécurité</h3>
+            <img id="ID" src="images/ID.png">
+                <p>
+                    Mes connaissances techniques, ma curiosité et ma rigueur professionnelle sont les points forts que je désire apporter à votre entreprise.
+                    En effet, mes différents postes en laboratoire, ainsi que mon projet associatif, ont été des expériences enrichissantes. Ils m’ont permis de développer 
+                    J’ai à cette occasion acquis des qualités essentielles à la bonne conduite de projets :
+                    </p>
+                    - Organisation rigoureuse pour une gestion optimale de la cinétique des projets en cours.</br>
+                    - Flexibilité et adaptation rapide en fonction des résultats obtenus.</br>
+                    - Veille technologique dans un environnement concurrentiel.</br>
+                    - Communication : Rédaction de bilans à usage interne et externe, demande de financement, présentation orale (Français ou Anglais).</br>
+                                    <table>
+                   <tr>
+                       <th>Colone A</th>
+                       <th>Colone B</th>
+                   </tr>
+                   <tr>
+                       <th>Colone 1A</th>
+                       <th>Colone 1B</th>
+                   </tr>
+                   <tr>
+                       <th>Colone 2A</th>
+                       <th>Colone 2B</th>
+                   </tr>
+                </table>
             </div>
         </div>
 

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title> Sébastien Le Querec</title>
+    <LINK rel="stylesheet" type="text/css" href="style/light.css"></LINK>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="content-language" content="fr">
+    <script type="text/javascript">
+      function changeCSS(cssFile, cssLinkIndex) {
+ 
+        var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+ 
+        var newlink = document.createElement("link");
+        newlink.setAttribute("rel", "stylesheet");
+        newlink.setAttribute("type", "text/css");
+        newlink.setAttribute("href", cssFile);
+ 
+        document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+      }
+    </script>
+  </head>
+  <body>
+    <div id ="all">
+        <div id="header">
+        <div id="logo">
+            <IMG src="logo-etna.png" alt= "Photo Sébastien Le Querec">
+        </div>
+        <div id="title">
+            <h1>
+                Projet SiteWeb - Sébastien Le Querec
+            </h1>
+        </div>    
+        </div>
+        <div id="content_menu_main">
+            <div id="menu">
+                <ul id="tool">
+                    <li><a> Navigation </a>
+                        <ul>
+
+                        <li><a href="index.html"> Acceuil</a></li>
+                        <li><a href="contact.html"> Contact </a></li>
+
+                        <li><a href="asso.html"> Association Conetic</a></li>
+                        <li><a href="https://github.com/sebidouille/SiteWeb.git"> My gitHub</a></li>
+                        </ul>
+                    </li>
+                    <li><a> Skin </a>
+                        <ul>
+                  <li><a href="#" onclick="changeCSS('./style/essai.css', 0);"> STYLE 1 </a></li>
+                  <li><a href="#" onclick="changeCSS('./style/style2.css', 0);"> STYLE 2 </a></li>
+                  <li><a href="#" onclick="changeCSS('./style/light.css', 0);"> ligth </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id ="main">
+            <h2 id ="Title2">Sebastien Le Querec</h2>
+            <h3> Ingénieur Système, Réseau et Sécurité</h3>
+            <img id="ID" src="images/ID.png">
+                <p>
+                    Mes connaissances techniques, ma curiosité et ma rigueur professionnelle sont les points forts que je désire apporter à votre entreprise.
+                    En effet, mes différents postes en laboratoire, ainsi que mon projet associatif, ont été des expériences enrichissantes. Ils m’ont permis de développer 
+                    J’ai à cette occasion acquis des qualités essentielles à la bonne conduite de projets :
+                    </p>
+                    - Organisation rigoureuse pour une gestion optimale de la cinétique des projets en cours.</br>
+                    - Flexibilité et adaptation rapide en fonction des résultats obtenus.</br>
+                    - Veille technologique dans un environnement concurrentiel.</br>
+                    - Communication : Rédaction de bilans à usage interne et externe, demande de financement, présentation orale (Français ou Anglais).</br>
+                                    <table>
+                   <tr>
+                       <th>Colone A</th>
+                       <th>Colone B</th>
+                   </tr>
+                   <tr>
+                       <th>Colone 1A</th>
+                       <th>Colone 1B</th>
+                   </tr>
+                   <tr>
+                       <th>Colone 2A</th>
+                       <th>Colone 2B</th>
+                   </tr>
+                </table>
+                <p>
+                   Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
+                  </p>
+                  <p>
+                  On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de distractions, et empêche de se concentrer sur la mise en page elle-même. L'avantage du Lorem Ipsum sur un texte générique comme 'Du texte. Du texte. Du texte.' est qu'il possède une distribution de lettres plus ou moins normale, et en tout cas comparable avec celle du français standard. De nombreuses suites logicielles de mise en page ou éditeurs de sites Web ont fait du Lorem Ipsum leur faux texte par défaut, et une recherche pour 'Lorem Ipsum' vous conduira vers de nombreux sites qui n'en sont encore qu'à leur phase de construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).
+                  </p>
+                  <p>
+                  Contrairement à une opinion répandue, le Lorem Ipsum n'est pas simplement du texte aléatoire. Il trouve ses racines dans une oeuvre de la littérature latine classique datant de 45 av. J.-C., le rendant vieux de 2000 ans. Un professeur du Hampden-Sydney College, en Virginie, s'est intéressé à un des mots latins les plus obscurs, consectetur, extrait d'un passage du Lorem Ipsum, et en étudiant tous les usages de ce mot dans la littérature classique, découvrit la source incontestable du Lorem Ipsum. Il provient en fait des sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" (Des Suprêmes Biens et des Suprêmes Maux) de Cicéron. Cet ouvrage, très populaire pendant la Renaissance, est un traité sur la théorie de l'éthique. Les premières lignes du Lorem Ipsum, "Lorem ipsum dolor sit amet...", proviennent de la section 1.10.32.
+                  </p>
+                  <p>
+                  L'extrait standard de Lorem Ipsum utilisé depuis le XVIè siècle est reproduit ci-dessous pour les curieux. Les sections 1.10.32 et 1.10.33 du "De Finibus Bonorum et Malorum" de Cicéron sont aussi reproduites dans leur version originale, accompagnée de la traduction anglaise de H. Rackham (1914).
+                  </p>
+                  <p>
+                  Plusieurs variations de Lorem Ipsum peuvent être trouvées ici ou là, mais la majeure partie d'entre elles a été altérée par l'addition d'humour ou de mots aléatoires qui ne ressemblent pas une seconde à du texte standard. Si vous voulez utiliser un passage du Lorem Ipsum, vous devez être sûr qu'il n'y a rien d'embarrassant caché dans le texte. Tous les générateurs de Lorem Ipsum sur Internet tendent à reproduire le même extrait sans fin, ce qui fait de lipsum.com le seul vrai générateur de Lorem Ipsum. Iil utilise un dictionnaire de plus de 200 mots latins, en combinaison de plusieurs structures de phrases, pour générer un Lorem Ipsum irréprochable. Le Lorem Ipsum ainsi obtenu ne contient aucune répétition, ni ne contient des mots farfelus, ou des touches d'humour..
+                </p>
+            </div>
+        </div>
+
+        <div id ="footer">
+            <h3>footer de footer</h3>
+        </div>
+    </div>
+
+</body>
+</html>

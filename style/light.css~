@@ -1,15 +1,27 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-size: 1.6;
     font-family: tahoma, arial, sans-serif;
-    background:url(../images/background.png);
+    background:url(../images/1741.png);
 }
 ul {
     float:right;
     margin: 16px 16px 0px 0px;
     padding:0px;
     list-style: none;
+}
+#ID {
+margin: 10px;
+  width: 150px;
+  border-radius:150px;
+  float:left;
+
+}
+.logos{
+  float:right;
+  margin : auto;
+  height: 60px;
+  border-radius: 10px;
 }
 
 #all {
@@ -27,7 +39,6 @@ padding-bottom: 30px;
 h1, h2, h3{
     margin-left: 10px
 }
-
 #title2 {
     margin-left: 20px;
 }
@@ -62,10 +73,8 @@ h1, h2, h3{
   font-family: verdana;
   font-size:1.2em;
   color:black;
-
 }
 #tool ul li a, #tool li:hover li a {
-  font-size:1;
   color:white;
 }
 #tool li:hover {
@@ -84,18 +93,20 @@ h1, h2, h3{
 #tool li li {
    max-height:0;
    overflow: hidden;
-   transition: all 1s;
+   transition: all 2s;
    background: #444;
    box-shadow: none;
    border:none;
    margin:0;
 }
+
 #title {
+    margin-top: 20px;
     margin-right: 30px;
     float: right;
 }
 #logo{
-    margin: 10px;
+    margin: 15px;
     float: left;
 }
 iframe {
@@ -133,16 +144,24 @@ iframe {
     float:right;
 }
 #footer {
-    clear:both;
+  clear:both;
+
+  margin-right: 50px;
+
     width:1024px;
-    height:100px;
+    height:90px;
 }
+#footer div {
+  float: left;
+}
+
 p {
     margin-left: 30px;
     margin-right: 30px;
     text-align: justify;
 }
 table, th, td {
+  clear:both;
     width: 50%;
     margin: auto;
     border: 1px solid black;
