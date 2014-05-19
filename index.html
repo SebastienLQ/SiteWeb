@@ -2,18 +2,9 @@
 <html>
   <head>
     <title> Sébastien Le Querec</title>
-    <link rel="stylesheet" type="text/css" href="style/light.css">
     <meta charset="utf-8">
-    <script type="text/javascript">
-      function changeCSS(cssFile, cssLinkIndex) {
-      var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
-      var newlink = document.createElement("link");
-      newlink.setAttribute("rel", "stylesheet");
-      newlink.setAttribute("type", "text/css");
-      newlink.setAttribute("href", cssFile);
-      document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
-      }
-    </script>
+    <link id="styleCSS" rel="stylesheet" type="text/css" href="style/style2.css">
+   <script type="text/javascript" src="changeStyle.js"></script> 
   </head>
   <body>
     <div id ="all">
@@ -32,18 +23,28 @@
           <ul id="tool">
             <li><a> Navigation </a>
               <ul>
-                <li><a href="index.html"> Acceuil</a></li>
+                <li><a href="index.html"> Acceuil (XHTML)</a></li>
+                <li><a href="index2.html"> Acceuil (HTML)</a></li>
+                <li><a href="conetic.html"> Mon Asso </a></li>
+                <li><a href="cv.html"> Mon CV </a></li>
+                <li><a href="etna.html"> Mon ecole </a></li>
                 <li><a href="contact.html"> Contact </a></li>
-                <li><a href="asso.html"> Association Conetic</a></li>
-                <li><a href="https://github.com/sebidouille/SiteWeb.git"> My gitHub</a></li>
+              </ul>
+            </li>
+            <li><a> liens externes </a>
+              <ul>
+                <li><a href="https://github.com/sebidouille/SiteWeb.git" target="_blank"> Mon gitHub</a></li>
+                <li><a href="http://blog.lequerec.fr" target="_blank">Mon blog perso</a></li>
+                <li><a href="http://www.conetic.fr" target="_blank">Mon asso</a></li>
+                <li><a href="http://etna-alternance.net/" target="_blank">Mon ecole</a></li>
+
               </ul>
             </li>
             <li><a> Skin </a>
               <ul>
-                  <li><a href="#" onclick="changeCSS('./style/essai.css', 0);"> STYLE 1 </a></li>
-                  <li><a href="#" onclick="changeCSS('./style/style2.css', 0);"> STYLE 2 </a></li>
-                  <li><a href="#" onclick="changeCSS('./style/light.css', 0);"> ligth </a></li>
-                  <li><a href="#" onclick="changeCSS('./style/vinci.css', 0);"> VINCI </a></li>
+                <li><a href="#" onclick="changeCookie('_seb','./style/style2.css'); writeHTML();"> Dark </a></li>
+                <li><a href="#" onclick="changeCookie('_seb','./style/light.css');; writeHTML();"> Ligth </a></li>
+                <li><a href="#" onclick="changeCookie('_seb','./style/vinci.css');; writeHTML();"> VINCI </a></li>
               </ul>
             </li>
           </ul>
@@ -65,37 +66,34 @@
           </p>
           <table>
             <tr>
-              <th>Colone A</th>
-              <th>Colone B</th>
+              <th colspan="4">Folow Me </th>
+
             </tr>
             <tr>
-              <th>Colone 1A</th>
-              <th>Colone 1B</th>
+              <th>viaeo.com</th>
+              <th>linkedin.com</th>
+              <th>monster.com</th>
+              <th>lesjeudis.com</th>
             </tr>
             <tr>
-              <th>Colone 2A</th>
-              <th>Colone 2B</th>
+              <th><a href="http://www.viadeo.com/profile/002lf7m36nxr3j9/fr/?readOnly=true" target="_blank"><img src="images/viadeo.jpg" alt="viadeo.com" ></a></th>
+              <th><a href="http://fr.linkedin.com/pub/sébastien-le-querec/4b/aa3/b39/" target="_blank"><img src="images/linkedin.jpg" alt="monster.com"></a></th> 
+              <th><a href="http://beknown.com/sebastien-lequerec" target="_blank"><img src="images/monster.png" alt="monster.com"></a></th>
+              <th><a href="http://www.lesjeudis.com/intl/jobseeker/mycbv2.aspx" target="_blank"><img src="images/lesjeudis.png" alt="lesjeudis.com"></a></th>
             </tr>
           </table>
-        </div>
+          <br>
+      </div>
       </div>
       <div id ="footer">
-        <p>
-          <a href="http://jigsaw.w3.org/css-validator/check/referer">
-            <img style="border:0;width:88px;height:31px"
-                 src="http://jigsaw.w3.org/css-validator/images/vcss"
-                 alt="CSS Valide !" />
-          </a>
-        </p>
+        <div id = "cc">
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="images/by-nc-sa.png" ></a><br /><span>SiteWeb de Sébastien Le Querec est mis à disposition selon les termes de la <br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International</a>.
+          </span>
+        </div>
         <div>
-	  <p>
-            site under CC licence by Sébastien Le Querec
-          </p>
-	</div>
-        <div>
-          <img class="logos" src="images/HTML5.png" alt="logo HTML5">
-          <img class="logos" src="images/css3.png" alt="logo CSS3">
+           <img class="logos" src="images/logo-version.png" alt="logos versions">
         </div>
       </div>
+    </div>
   </body>
 </html>

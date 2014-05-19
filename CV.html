@@ -1,44 +1,128 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <LINK rel="stylesheet" type="text/css" href="style.css">
-    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title> Sébastien Le Querec</title>
+    <meta charset="utf-8">
+    <link id="styleCSS" rel="stylesheet" type="text/css" href="style/style2.css">
+   <script type="text/javascript" src="changeStyle.js"></script> 
   </head>
   <body>
     <div id ="all">
-        <div id="header">
+      <div id="header">
         <div id="logo">
-            <IMG src="logo-etna.png">
+          <IMG src="images/logo-etna.jpg" alt= "Logo ETNA">
         </div>
         <div id="title">
-            <h1>
-                Seb ETNA
-            </h1>
-        </div>    
+          <h1>
+            Projet SiteWeb - Sébastien Le Querec
+          </h1>
         </div>
-        <div id="content_menu_main">
-            <div id="menu">
-                <div id="tool">
-                    <ul id="onglets">
-                    <li><a href="cv.html"> CV Sébastien Le Querec </a></li>
-                    <li><a href="asso.html"> Association Conetic</a></li>
-                    </ul>
-                </div>
-                <div id="tool">
-                    <h3>
-                    folow me :
-                    </h3>
-                </div>
-            </div>
-            <div id ="main">
-            <h2 id ="Title2">Sebastien Le Querec</h2>
-                <iframe src="PDF/lequerec_sebastien_cv.pdf"></iframe>
-            </div>
-        </div>
-        <div id ="footer">
-            <h3>footer de footer</h3>
-        </div>
-    </div>
+      </div>
+      <div id="content_menu_main">
+        <div id="menu">
+          <ul id="tool">
+            <li><a> Navigation </a>
+              <ul>
+                <li><a href="index.html"> Acceuil (XHTML)</a></li>
+                <li><a href="index2.html"> Acceuil (HTML)</a></li>
+                <li><a href="conetic.html"> Mon Asso </a></li>
+                <li><a href="cv.html"> Mon CV </a></li>
+                <li><a href="etna.html"> Mon ecole </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+              </ul>
+            </li>
+            <li><a> liens externes </a>
+              <ul>
+                <li><a href="https://github.com/sebidouille/SiteWeb.git" target="_blank"> Mon gitHub</a></li>
+                <li><a href="http://blog.lequerec.fr" target="_blank">Mon blog perso</a></li>
+                <li><a href="http://www.conetic.fr" target="_blank">Mon asso</a></li>
+                <li><a href="http://etna-alternance.net/" target="_blank">Mon ecole</a></li>
 
-</body>
+              </ul>
+            </li>
+            <li><a> Skin </a>
+              <ul>
+                <li><a href="#" onclick="changeCookie('_seb','./style/style2.css'); writeHTML();"> Dark </a></li>
+                <li><a href="#" onclick="changeCookie('_seb','./style/light.css');; writeHTML();"> Ligth </a></li>
+                <li><a href="#" onclick="changeCookie('_seb','./style/vinci.css');; writeHTML();"> VINCI </a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id ="main">
+         <h2>Mon CV</h2>
+            <div id ="address">
+            <p>
+                Sébastien Le Querec<br>
+                13 rue Henri Ravera<br>
+                92220 Bagneux
+            </p>
+            </div>
+              <div id="function">
+                    <h2>Administrateur Réseau <br>
+                    Système et Sécurité junior<br></h2>
+              </div>
+                        <h3>Président Conetic</h3>
+                        <h4>Novembre 2013 à Aujourd'hui - Chartres</h4>
+              <p>
+              L’association Conetic à pour but la promotion, l’utilisation et le développement des réseaux Internet dans le respect de leur éthique en favorisant en particulier les utilisations à des fins de recherche ou d’éducation sans volonté commerciale et enfin de défendre la neutralité de ce réseau.<br>
+              Moyens d'actions :<br>
+              -Fournisseur d’accès à internet (prévu fin mars 2014) pour ses adhérents.<br>
+              -Mise à disposition de services messagerie instantané, mail, transfert de fichiers, hébergement de contenu et toutes application fonctionnant sur Internet, pour ses adhérents.<br>
+              -Publications des actions de formation et d'éducation populaire en rapport avec l'objet de l'association.
+              </p>
+
+              <h3> ETNA/EPITECH (Ecole Des Technologies Numeriques Appliquees)</h3>
+              <h4> Octobre 2013 à Aujourd'hui - Ivry Sur Seine</h4>
+              <p>
+              Préparation du Master 1<br>
+              Programmation/ Administration de WebServices/ Web avancée<br>
+              Méthode de conduite de projets<br>
+              Programmation Système Unix en C<br>
+              Programmation Réseau<br>
+              Programmation Système Windows<br>
+              Programmation en RUBY<br>
+              Réseau avancé<br>
+              Sécurité réseau<br>
+              Administration SGBD<br>
+              Concept de VoIP<br>
+              Administration de messagerie
+              </p>
+              <h3>Assistant de recherche</h3>
+              <h4>Décembre 2009 à Décembre 2011 - INRS IAF montreal</h4>
+              <p>
+              « Implication de l’épididyme dans la maturation des spermatozoïdes »<br>
+              Réalisation d'un projet scientifique dans son ensemble.<br>
+              -Culture cellulaire; co-culture.<br>
+              -Q-PCR.<br>
+              -Western Blot.<br>
+              -Séparation cellulaire par gradient de Percoll.<br>
+              </p>
+              <h3>Assistant de laboratoire </h3>
+              <h4>Janvier 2009 à Juin 2009 - giga neurosciences Liège</h4>
+              <p>
+              « Rôle des œstrogènes dans le développement du comportement reproducteur femelle chez les souris. »<br>
+              - Mise en place d’un protocole d’expérimentation et gestion du calendrier des expériences (comportement sexuel).<br>
+              -Ovariectomie sur souris adulte et de 9 jours.<br>
+              -Immunohistochimie en coupe flottante et sur lame mince (cerveaux).
+              </p>
+              <h3>Université Tours Francois Rabelais</h3>
+              <h4> Septembre 2008 à Juin 2009 - Tours</h4>
+              <p>
+              Master 2 biologie évolutive, intégrative et infectiologie<br>
+              spécialité biologie de la reproduction
+              </p>
+      </div>
+      </div>
+      <div id ="footer">
+        <div id = "cc">
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="images/by-nc-sa.png" ></a><br /><span>SiteWeb de Sébastien Le Querec est mis à disposition selon les termes de la <br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International</a>.
+          </span>
+        </div>
+        <div>
+           <img class="logos" src="images/logo-version.png" alt="logos versions">
+        </div>
+      </div>
+      </div>
+  </body>
 </html>

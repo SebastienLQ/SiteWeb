@@ -1,77 +1,83 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title> Sébastien Le Querec</title>
-    <LINK rel="stylesheet" type="text/css" href="style/ligth.css"></LINK>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <meta http-equiv="content-language" content="fr">
-    <script type="text/javascript">
-      function changeCSS(cssFile, cssLinkIndex) {
- 
-        var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
- 
-        var newlink = document.createElement("link");
-        newlink.setAttribute("rel", "stylesheet");
-        newlink.setAttribute("type", "text/css");
-        newlink.setAttribute("href", cssFile);
- 
-        document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
-      }
-    </script>
+    <title> Sébastien Le Querec</title>
+    <meta charset="utf-8">
+    <link id="styleCSS" rel="stylesheet" type="text/css" href="style/style2.css">
+   <script type="text/javascript" src="changeStyle.js"></script> 
   </head>
   <body>
     <div id ="all">
-        <div id="header">
+      <div id="header">
         <div id="logo">
-            <IMG src="images/logo-etna.png">
+          <IMG src="images/logo-etna.jpg" alt= "Logo ETNA">
         </div>
         <div id="title">
-            <h1>
-                Projet SiteWeb - Sébastien Le Querec
-            </h1>
-        </div>    
+          <h1>
+            Projet SiteWeb - Sébastien Le Querec
+          </h1>
         </div>
-        <div id="content_menu_main">
-            <div id="menu">
-                <ul id="tool">
-                    <li><a> Navigation </a>
-                        <ul>
+      </div>
+      <div id="content_menu_main">
+        <div id="menu">
+          <ul id="tool">
+            <li><a> Navigation </a>
+              <ul>
+                <li><a href="index.html"> Acceuil (XHTML)</a></li>
+                <li><a href="index2.html"> Acceuil (HTML)</a></li>
+                <li><a href="conetic.html"> Mon Asso </a></li>
+                <li><a href="cv.html"> Mon CV </a></li>
+                <li><a href="etna.html"> Mon ecole </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+              </ul>
+            </li>
+            <li><a> liens externes </a>
+              <ul>
+                <li><a href="https://github.com/sebidouille/SiteWeb.git"  target="_blank"> Mon gitHub</a></li>
+                <li><a href="http://blog.lequerec.fr"                     target="_blank"> Mon blog perso</a></li>
+                <li><a href="http://www.conetic.fr"                       target="_blank"> Mon asso</a></li>
+                <li><a href="http://etna-alternance.net/"                 target="_blank"> Mon ecole</a></li>
 
-                        <li><a href="index.html"> Acceuil</a></li>
-                        <li><a href="cv.html"> CV Sébastien Le Querec </a></li>
-                        <li><a href="asso.html"> Association Conetic</a></li>
-                        <li><a href="https://github.com/sebidouille/SiteWeb.git"> My gitHub</a></li>
-                        </ul>
-                    </li>
-                    <li><a> Skin </a>
-                        <ul>
-                  <li><a href="#" onclick="changeCSS('./style/essai.css', 0);"> STYLE 1 </a></li>
-                  <li><a href="#" onclick="changeCSS('./style/style2.css', 0);"> STYLE 2 </a></li>
-                  <li><a href="#" onclick="changeCSS('./style/light.css', 0);"> ligth </a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div id ="main">
-            <h2 id ="Title2">Contact</h2>
-              <form action="mailto:sebastien@lequerec.fr" method="post" name="Contact">
-              <input type="text" name="nom">
-              <input type="text" name="prénom">
-              <textarea name="message" rows="5" cols="20"></textarea>
-              <select name="attribu">
-                <option value="celibataire">celibataire</option>
-                <option value="marié">marié</option>
-                <option value="je m'en caliss">tabarnak</option>
-              </select>
-              <input type="submit"  value="envoyer"></form>
-
-            </div>
+              </ul>
+            </li>
+            <li><a> Skin </a>
+              <ul>
+                <li><a href="#" onclick="changeCookie('_seb','./style/style2.css'); writeHTML();"> Dark </a></li>
+                <li><a href="#" onclick="changeCookie('_seb','./style/light.css');; writeHTML();"> Ligth </a></li>
+                <li><a href="#" onclick="changeCookie('_seb','./style/vinci.css');; writeHTML();"> VINCI </a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-
-        <div id ="footer">
-            <h3>footer de footer</h3>
+        <div id ="main">
+        <h2 id ="Title2">Contact</h2>
+          <form action="mailto:lequer_s@etna-alternance.net?subject=SiteWebproject" method="post">
+            <label for="nom" >Nom :          </label><input id="nom" name ="nom" required type="text"/><br>
+            <label for="prenom">Prénom :    </label><input id="prenom" name ="prenom" type="text"  /><br>
+            <label for="age">Âge :          </label><select id="age"> <option>16-20</option>
+                                                              <option>21-25</option>
+                                                              <option>25-50</option>
+                                                              <option>+50</option></select><br>
+            <label for="mail">E-mail:       </label><input id="mail" type="email" name="usremail"><br>
+            <label for="sexe">Sexe        : </label><input id="sexe" type="radio" name="sexe" value="homme" />Homme 
+                                                    <input type="radio" name="sexe" value="femme"/>Femme<br>
+            <label for="request"> Message : </label><textarea id="request" name = "request">Soyez malin ....</textarea><br>
+            <label> <input type="submit" value="Envoyer"></label>
+          </form>
+          <br>
+          <br>
+            Votre adresse de messagerie ne sera pas publiée.<br> Les champs obligatoires sont indiqués avec *<br>
+      </div>
+      </div>
+      <div id ="footer">
+        <div id = "cc">
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="images/by-nc-sa.png" ></a><br /><span>SiteWeb de Sébastien Le Querec est mis à disposition selon les termes de la <br><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">licence Creative Commons Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International</a>.
+          </span>
         </div>
+        <div>
+           <img class="logos" src="images/logo-version.png" alt="logos versions">
+        </div>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>

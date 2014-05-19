@@ -16,7 +16,7 @@ ul {
     width: 1024px;
     margin:auto;
 }
-#header, #main, #footer{
+#header, #main, #footer, #menu{
    background:#eeeeee; 
     background-color: #ddd;
    background-image: linear-gradient(#E5E5E5, #CFCFCF);

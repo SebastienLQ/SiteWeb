@@ -6,12 +6,12 @@ body {
    font-family: "vinci";
     margin: 0px;
     padding: 0px;
-    font-size: 1.6;
+    font-size: 1.6em;
 }
 ul {
     float:left;
     margin: 16px 16px 0px 0px;
-    padding:0px;
+    padding: 0px;
     list-style: none;
 }
 img {
@@ -22,6 +22,9 @@ img {
     -ms-filter: sepia(100%);
     -o-filter: sepia(100%);
     filter: sepia(100%);
+}
+form {
+  margin-left: 20px;
 }
 #ID {
 
@@ -46,10 +49,11 @@ margin: 10px;
 #header, #content_menu_main, #footer{
 
 }
-h1, h2, h3{
+h1, h2, h3, h4{
     direction: rtl;
    unicode-bidi: bidi-override;
-    margin-left: 10px
+    margin-left: 10px;
+    clear: both;
 }
 #title2 {
     margin-left: 20px;
@@ -149,6 +153,11 @@ filter: FlipH;
     float: left;
     margin-bottom: 10px;
 }
+#function, #address {
+  float: left;
+  margin-left: 10px;
+  margin-right: 100px;
+}
 #menu {
     width: 200px;
     height: 200px;
@@ -176,8 +185,28 @@ filter: FlipH;
     height:90px;
 
 }
-p {
+#footer {
+  clear:        both;
+  width:        1024px;
+  height:       90px;
 
+}
+#footer div {
+  float:  left;
+  margin: 30px;
+}
+#footer img {
+  width: 50px;
+}
+#footer .logos {
+  margin-left: 100px;
+  height: 60px;
+  width:  130px;
+} 
+#footer p {
+  font-size: 10px;
+}
+p {
   direction: rtl;
    unicode-bidi: bidi-override;
    font-size: large;
